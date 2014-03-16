@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp">
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/img_artista" android:layout_gravity="left|center_vertical"
+                />
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:id="@+id/lny_descipcion">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Artista"
+                    android:id="@+id/lbl_artista" android:layout_gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp" android:textSize="18dp" android:textStyle="bold"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:text="01 de Enero del 2013" android:id="@+id/lbl_fechaHora"
+                      android:layout_gravity="center_vertical|left" android:singleLine="true"
+                      android:layout_marginRight="5dp" android:gravity="right" android:textSize="15dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reggae"
+                    android:id="@+id/lbl_tipo" android:layout_gravity="left|center_vertical"
+                    android:singleLine="true" android:layout_marginLeft="5dp" android:textStyle="italic"
+                    android:textSize="16dp" android:textIsSelectable="true"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mexicano"
+                    android:id="@+id/lbl_origen" android:layout_gravity="left|center_vertical"
+                    android:singleLine="true" android:layout_marginLeft="5dp" android:textSize="16dp"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="lugar"
+                    android:id="@+id/lbl_lugar" android:layout_gravity="left|center_vertical"
+                    android:gravity="right" android:layout_marginRight="5dp"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ciudad"
+                      android:id="@+id/lbl_ciudad" android:layout_gravity="right|center_vertical"
+                      android:gravity="right" android:layout_marginRight="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:id="@+id/lny_scrll_content" android:focusable="true">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ultimo Disco"
+                    android:id="@+id/lbl_ultimoDisco" android:layout_gravity="center" android:layout_marginTop="10dp"
+                    android:textStyle="normal" android:textSize="19dp" android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+            <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/img_ultimoDisco" android:layout_gravity="center"/>
+            <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ver Boletos"
+                    android:id="@+id/btn_verBoletos" android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
